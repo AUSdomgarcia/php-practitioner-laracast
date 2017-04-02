@@ -1,0 +1,8 @@
+messaging
+polymorphism
+inheritance
+composition
+
+composition over inheritance
+constantly inherit to classes - refer to composition
+s
