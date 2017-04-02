@@ -1,0 +1,5 @@
+delegate meaning
+$_SERVER
+sprintf();
+array_keys()
+$statement->bindParam

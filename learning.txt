@@ -1,0 +1,33 @@
+htmlspecialchars
+ucwords
+var_dump
+die()
+
+echo '<pre>'
+die(var_dump($var));
+
+SQL
+show databases;
+create database mytodo;
+use mytodo;
+create table todos (id integer PRIMARY KEY AUTO_INCREMENT, description text NOT NULL, completed boolean NOT NULL);
+describe todos;
+show tables;
+inser into todos (description, completed) values('Go to the store', false);
+select * from todos;
+select * from todos where id = 1;
+
+Class Noun singular
+----
+
+
+PDO
+---
+try {
+	$pdo = new PDO('mysql:host=127.0.0.1;dbname=mytodo','root','');
+} catch (PDOException $e){
+	die('Could not connect.');
+}
+$statement = $pdo->prepare('select * from todos');
+$statement->execute();
+$results = $statement->fetchAll(PDO::FETCH_OBJ);
